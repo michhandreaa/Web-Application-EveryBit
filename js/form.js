@@ -8,9 +8,6 @@ var heading = document.createElement('h2'); // Heading of Form
 heading.innerHTML = "Contact Form ";
 createform.appendChild(heading);
 
-var line = document.createElement('hr'); // Giving Horizontal Row After Heading
-createform.appendChild(line);
-
 var linebreak = document.createElement('br');
 createform.appendChild(linebreak);
 
