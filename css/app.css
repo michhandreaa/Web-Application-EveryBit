@@ -2,11 +2,11 @@
 .dark-background      { background: #1976D2; }
 .default-background   { background: #2196F3; }
 .light-background    { background: #BBDEFB; }
-.text-color     { color: #FFFFFF; }
+.text-color     { color: #3f3f3f; }
 .accent-color            { background: #03A9F4; }
 .accent-background { background: #03A9F4; }
 .primary-text-color      { color: #3f3f3f; }
-.secondary-text-color    { color: #727272; }
+.secondary-text-color    { color: #3f3f3f; }
 .divider-color           { border-color: #B6B6B6; }
 .text-blue {
   color: #3f3f3f;
@@ -69,6 +69,7 @@ html, body {
  }
  a {
   text-decoration: none;
+  color: inherit;
  }
  #product-nav {
   list-style: none;
