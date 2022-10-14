@@ -5,24 +5,24 @@
 .text-color     { color: #FFFFFF; }
 .accent-color            { background: #03A9F4; }
 .accent-background { background: #03A9F4; }
-.primary-text-color      { color: #212121; }
+.primary-text-color      { color: #3f3f3f; }
 .secondary-text-color    { color: #727272; }
 .divider-color           { border-color: #B6B6B6; }
 .text-blue {
-  color: #9857ff;
+  color: #3f3f3f;
 }
 .uppr {
   text-transform: uppercase;
 }
 h3.uppr {
-  border-bottom: 1px solid #4f4bd3;
+  border-bottom: 1px solid #3f3f3f;
 }
 html, body {
    margin: 0;
    padding: 0;
    width: 100%;
    background-color: #f9f9f9;
-   font-family: 'Advent Pro', sans-serif;
+   font-family: 'Helvetica', sans-serif;
   }
  .container {
   position: relative;
@@ -41,6 +41,9 @@ html, body {
  .grid {
   box-sizing: border-box;
   float: left;
+ }
+ .grid-one {
+  width: 100%;
  }
  .grid-two {
   width: 50%;
@@ -69,10 +72,8 @@ html, body {
  }
  #product-nav {
   list-style: none;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
   margin-top: 24px;
-  margin-bottom: 24px;
+  margin-bottom: 15px;
  }
  #product-nav li {
   float: left;
