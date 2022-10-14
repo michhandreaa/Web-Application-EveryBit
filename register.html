@@ -3,7 +3,7 @@
 
   <head>
     <title>EasyBit</title>
-    <link rel="shortcut icon" href="img/logo.ico" />
+    <link rel="shortcut icon" href="img/EveryBit logo.png" />
     <meta charset="utf-8" />
     <link href='https://fonts.googleapis.com/css?family=Advent+Pro:300,700' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" type="text/css" href="css/app.css" />
@@ -22,7 +22,7 @@
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li>  
-                <a href="index.html"><img src="img/logo.jpg" alt="logo" style="height: 64px; padding-left: 240px; margin-top: -20px"/>
+                <a href="index.html"><img src="img/EveryBit logo.png" alt="logo" style="height: 64px; padding-left: 240px; margin-top: -20px"/>
             </li>
               <li><a href="mycart.html" style="padding-left: 300px;">My Cart</a></li>
               <li><a href="login.html">Login</a></li>
@@ -33,28 +33,26 @@
 
     </header>
 
-    <div class="bannerimage">
-      <img src="img/banners/register.png" alt="banner">
-    </div>
     
    <main class="container">
      
 <div id="form_layout">
 <p id="head"></p>
 <!-- This segment displays the validation rule -->
+<h2> Register</h2>
 <!-- Form starts from here -->
 <form onsubmit='return formValidation()'>
 <label>Full Name:</label>
 <input id='firstname' type='text'>
-<br>
+<p id="p1"></p>
 <!-- This segment displays the validation rule for name -->
 <label>Username(6-8 characters):</label>
 <input id='username' type='text'>
-<br>
+<p id="p2"></p>
 <!-- This segment displays the validation rule for user name -->
 <label>Email:</label>
 <input id='email' type='text'>
-<br>
+<p id="p3"></p>
 <!-- This segment displays the validation rule for email -->
 <label>State:</label>
 <select id='state'>
@@ -89,15 +87,15 @@ Sweden
 Africa
 </option>
 </select>
-<br>
+<p id="p4"></p>
 <!-- This segment displays the validation rule for selection -->
 <label>Address:</label>
 <input id='addr' type='text'>
-<br>
+<p id="p5"></p>
 <!-- This segment displays the validation rule for address -->
 <label>Zip Code:</label>
 <input id='zip' type='text'>
-<br>
+<p id="p6"></p>
 <!-- This segment displays the validation rule for zip -->
 <input id="submit" type='submit' value='Check Form'>
 </form>
