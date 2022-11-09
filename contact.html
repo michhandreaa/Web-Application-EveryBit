@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 
+  <!--                HEAD               -->
   <head>
     <title>EveryBit: Contact Us</title>
     <link rel="shortcut icon" href="img/EveryBit logo.png" />
@@ -9,11 +10,11 @@
     <link rel="stylesheet" type="text/css" href="css/app.css" />
   </head>
 
-
+  <!--                BODY               -->
   <body>
 
+    <!--                HEADER               -->
     <header style="background-color: white; box-shadow: 0 1px 4px rgba(0, 0, 0, .1);">
-    
       <div class="container" style="padding-top: 8px;">
         <div class="grid grid-one" style="padding-top: 5px;">
           <nav id="product-nav" class="full">
@@ -30,67 +31,61 @@
           </nav>
         </div>
       </div>
-
     </header>
 
-    
-   <main class="container">
-
-    <div id="main">
-    <h1>Contact </h1>
-    <div id="form_sample"></div>
-    <script src="js/form.js"></script>
-    </div>
-
-  </main>
-  
-  
-  <footer>
-    <div class="container">
-      <div class="full">
-        <div class="grid grid-four">
-          <h4 class="text-blue">PRODUCTS</h4>
-          <ul>
-            <li><a href="computers.html">Computers</a></li>
-            <li><a href="phones.html">Phones</a></li>
-            <li><a href="tablets.html">Tablets</a></li>
-            <li><a href="gadgets.html">Gadgets</a></li>
-            <li><a href="accessories.html">Accessories</a></li>
-          </ul>
-        </div>
-        <div class="grid grid-four">
-          <h4 class="text-blue">CONTACT</h4>
-          <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="grid grid-four"></div>
-        <div class="grid grid-four"></div>
+    <!--                MAIN               -->
+    <main class="container">
+      <div id="main">
+        <h1>Contact </h1>
+        <div id="form_sample"></div>
+        <script src="js/form.js"></script>
       </div>
-    </div>
+    </main>
+  
+    <!--                FOOTER               -->
+    <footer>
+      <div class="container">
+        <div class="full">
+          <div class="grid grid-four">
+            <h4 class="text-blue">PRODUCTS</h4>
+            <ul>
+              <li><a href="computers.html">Computers</a></li>
+              <li><a href="phones.html">Phones</a></li>
+              <li><a href="tablets.html">Tablets</a></li>
+              <li><a href="gadgets.html">Gadgets</a></li>
+              <li><a href="accessories.html">Accessories</a></li>
+            </ul>
+          </div>
 
-    <div style="text-align: center; padding: 16px;">
-      Copyright &copy; 2022, EveryBit.
-    </div>
-   </footer>
+          <div class="grid grid-four">
+            <h4 class="text-blue">CONTACT</h4>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
 
+          <div class="grid grid-four"></div>
+          <div class="grid grid-four"></div>
+        </div>
+      </div>
 
-  <script type="text/javascript">
-   (function(d) {
-    var products = document.getElementsByClassName('product');
-    for(var i = products.length - 1;i >= 0 ; --i) {
-     products[i].onclick = function() {
-      var src = this.getElementsByTagName('img')[0].src;
-      document.location.href = 'demo.html#' +  src;
-     }
-    }
-   })(document);
+      <div style="text-align: center; padding: 16px;">
+        Copyright &copy; 2022, EveryBit.
+      </div>
+    </footer>
 
-  </script>
- </body>
- </html>
-
-
+    <!--                SCRIPT               -->
+    <script type="text/javascript">
+        (function(d) {
+          var products = document.getElementsByClassName('product');
+          for(var i = products.length - 1;i >= 0 ; --i) {
+            products[i].onclick = function() {
+              var src = this.getElementsByTagName('img')[0].src;
+              document.location.href = 'demo.html#' +  src;
+            }
+          }
+        })(document);
+    </script>
   </body>
 </html>

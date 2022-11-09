@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 
+  <!--                HEAD               -->
   <head>
     <title>EveryBit: About</title>
     <link rel="shortcut icon" href="img/EveryBit logo.png" />
@@ -9,11 +10,11 @@
     <link rel="stylesheet" type="text/css" href="css/app.css" />
   </head>
 
-
+  <!--                BODY               -->
   <body>
 
-    <header style="background-color: white; box-shadow: 0 1px 4px rgba(0, 0, 0, .1);">
-    
+    <!--                HEADER               -->
+    <header style="background-color: white; box-shadow: 0 1px 4px rgba(0, 0, 0, .1);">    
       <div class="container" style="padding-top: 8px;">
         <div class="grid grid-one" style="padding-top: 5px;">
           <nav id="product-nav" class="full">
@@ -30,82 +31,82 @@
           </nav>
         </div>
       </div>
-
     </header>
 
     <div class="bannerimage">
       <img src="img/banners/about us.png" alt="banner">
     </div>
 
-   <main class="container">
-    <div>
-     <h1>Who are we?</h1>
-     <ul>
-       <li>We are an online store dedicated to all technology enthusiasts in the Philippines</li>
-       <br>
-       <li>We are focused on providing latest technology whether it be PC parts, phones, tablets, other gadgets, or accessories.</li>
-       <br>
-       <li>We are a company formed by students namely: Diego Manzano, Marc Marasigan, and Michelle Martinez.</li>
-     </li>
-   </div>
-
-   <br>
-    For questions & queries contact us through the following:</br>
-      <li><a href="contact.html">Contact Page</a></br></li>
-      <li>contact@everybit.com</br></li>
-      <li>09XX XXX XXXXX</br></li>
-    </br>
-      Thank you.</br>
-    </br>
-
-<Strong>EveryBit</strong></br>
-
-
-   </main>
-   
-
-   <footer>
-    <div class="container">
-      <div class="full">
-        <div class="grid grid-four">
-          <h4 class="text-blue">PRODUCTS</h4>
-          <ul>
-            <li><a href="computers.html">Computers</a></li>
-            <li><a href="phones.html">Phones</a></li>
-            <li><a href="tablets.html">Tablets</a></li>
-            <li><a href="gadgets.html">Gadgets</a></li>
-            <li><a href="accessories.html">Accessories</a></li>
-          </ul>
-        </div>
-        <div class="grid grid-four">
-          <h4 class="text-blue">CONTACT</h4>
-          <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="grid grid-four"></div>
-        <div class="grid grid-four"></div>
+    <!--                MAIN               -->
+    <main class="container">
+      <div>
+        <h1>Who are we?</h1>
+        <ul>
+          <li>We are an online store dedicated to all technology enthusiasts in the Philippines</li>
+          <br>
+          <li>We are focused on providing latest technology whether it be PC parts, phones, tablets, other gadgets, or accessories.</li>
+          <br>
+          <li>We are a company formed by students namely: Diego Manzano, Marc Marasigan, and Michelle Martinez.</li>
+        </ul>
       </div>
-    </div>
 
-    <div style="text-align: center; padding: 16px;">
-      Copyright &copy; 2022, EveryBit.
-    </div>
-   </footer>
-
+      <br>
+        For questions & queries contact us through the following:</br>
+        <li><a href="contact.html">Contact Page</a></br></li>
+        <li>contact@everybit.com</br></li>
+        <li>09XX XXX XXXXX</br></li>
+      </br>
+        Thank you.</br>
+      </br>
+      <Strong>EveryBit</strong></br>
+    </main>
    
-   <script type="text/javascript">
-    (function(d) {
-     var products = document.getElementsByClassName('product');
-     for(var i = products.length - 1;i >= 0 ; --i) {
-      products[i].onclick = function() {
-       var src = this.getElementsByTagName('img')[0].src;
-       document.location.href = 'demo.html#' +  src;
-      }
-     }
-    })(document);
+    <!--                FOOTER               -->
+    <footer>
+      <div class="container">
+        <div class="full">
 
-   </script>
+          <div class="grid grid-four">
+            <h4 class="text-blue">PRODUCTS</h4>
+            <ul>
+              <li><a href="computers.html">Computers</a></li>
+              <li><a href="phones.html">Phones</a></li>
+              <li><a href="tablets.html">Tablets</a></li>
+              <li><a href="gadgets.html">Gadgets</a></li>
+              <li><a href="accessories.html">Accessories</a></li>
+            </ul>
+          </div>
+
+          <div class="grid grid-four">
+            <h4 class="text-blue">CONTACT</h4>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="grid grid-four"></div>
+          <div class="grid grid-four"></div>
+
+        </div>
+      </div>
+
+      <div style="text-align: center; padding: 16px;">
+        Copyright &copy; 2022, EveryBit.
+      </div>
+    </footer>
+
+    <!--                SCRIPT               -->
+    <script type="text/javascript">
+      (function(d) {
+        var products = document.getElementsByClassName('product');
+        for(var i = products.length - 1;i >= 0 ; --i) {
+          products[i].onclick = function() {
+            var src = this.getElementsByTagName('img')[0].src;
+            document.location.href = 'demo.html#' +  src;
+          }
+        }
+      })(document);
+    </script>
   </body>
 </html>

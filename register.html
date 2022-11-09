@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 
+  <!--                HEAD               -->
   <head>
     <title>EveryBit: Register</title>
     <link rel="shortcut icon" href="img/EveryBit logo.png" />
@@ -9,9 +10,10 @@
     <link rel="stylesheet" type="text/css" href="css/app.css" />
   </head>
 
-
+  <!--                BODY               -->
   <body>
 
+    <!--                HEADER               -->
     <header style="background-color: white; box-shadow: 0 1px 4px rgba(0, 0, 0, .1);">
     
       <div class="container" style="padding-top: 8px;">
@@ -24,131 +26,114 @@
             <li>  
                 <a href="index.html"><img src="img/EveryBit logo.png" alt="logo" style="height: 64px; padding-left: 240px; margin-top: -20px"/>
             </li>
-              <li><a href="mycart.html" style="padding-left: 300px;">My Cart</a></li>
-              <li><a href="login.html">Login</a></li>
-              <li><a href="register.html">Register</a></li>
+            <li><a href="mycart.html" style="padding-left: 300px;">My Cart</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
           </nav>
         </div>
       </div>
-
     </header>
 
-    
-   <main class="container">
-     
-<div id="form_layout">
-<p id="head"></p>
-<!-- This segment displays the validation rule -->
-<h2> Register</h2>
-<!-- Form starts from here -->
-<form onsubmit='return formValidation()'>
-<label>Full Name:</label>
-<input id='firstname' type='text'>
-<p id="p1"></p>
-<!-- This segment displays the validation rule for name -->
-<label>Username(6-8 characters):</label>
-<input id='username' type='text'>
-<p id="p2"></p>
-<!-- This segment displays the validation rule for user name -->
-<label>Email:</label>
-<input id='email' type='text'>
-<p id="p3"></p>
-<!-- This segment displays the validation rule for email -->
-<label>State:</label>
-<select id='state'>
-<option>
-Please Choose
-</option>
-<option>
-America
-</option>
-<option>
-Nepal
-</option>
-<option>
-India
-</option>
-<option>
-China
-</option>
-<option>
-Spain
-</option>
-<option>
-Singapoure
-</option>
-<option>
-Australia
-</option>
-<option>
-Sweden
-</option>
-<option>
-Africa
-</option>
-</select>
-<p id="p4"></p>
-<!-- This segment displays the validation rule for selection -->
-<label>Address:</label>
-<input id='addr' type='text'>
-<p id="p5"></p>
-<!-- This segment displays the validation rule for address -->
-<label>Zip Code:</label>
-<input id='zip' type='text'>
-<p id="p6"></p>
-<!-- This segment displays the validation rule for zip -->
-<input id="submit" type='submit' value='Check Form'>
-</form>
-</div>
+    <!--                MAIN               -->    
+    <main class="container">
+      <div id="form_layout">
+        <p id="head"></p>
 
-</main>
+        <!-- This segment displays the validation rule -->
+        <h2> Register</h2>
 
+        <!-- Form starts from here -->
+        <form onsubmit='return formValidation()'>
+          <label>Full Name:</label>
+          <input id='firstname' type='text'>
+          <p id="p1"></p>
+          
+          <!-- This segment displays the validation rule for name -->
+          <label>Username(6-8 characters):</label>
+          <input id='username' type='text'>
+          <p id="p2"></p>
 
-<footer>
-  <div class="container">
-    <div class="full">
-      <div class="grid grid-four">
-        <h4 class="text-blue">PRODUCTS</h4>
-        <ul>
-          <li><a href="computers.html">Computers</a></li>
-          <li><a href="phones.html">Phones</a></li>
-          <li><a href="tablets.html">Tablets</a></li>
-          <li><a href="gadgets.html">Gadgets</a></li>
-          <li><a href="accessories.html">Accessories</a></li>
-        </ul>
+          <!-- This segment displays the validation rule for user name -->
+          <label>Email:</label>
+          <input id='email' type='text'>
+          <p id="p3"></p>
+          
+          <!-- This segment displays the validation rule for email -->
+          <label>State:</label>
+          <select id='state'>
+            <option>Please Choose</option>
+            <option>America</option>
+            <option>Nepal</option>
+            <option>India</option>
+            <option>China</option>
+            <option>Spain</option>
+            <option>Singapore</option>
+            <option>Australia</option>
+            <option>Sweden</option>
+            <option>Africa</option>
+          </select>
+          <p id="p4"></p>
+
+          <!-- This segment displays the validation rule for selection -->
+          <label>Address:</label>
+          <input id='addr' type='text'>
+          <p id="p5"></p>
+
+          <!-- This segment displays the validation rule for address -->
+          <label>Zip Code:</label>
+          <input id='zip' type='text'>
+          <p id="p6"></p>
+
+          <!-- This segment displays the validation rule for zip -->
+          <input id="submit" type='submit' value='Check Form'>
+        </form>
       </div>
-      <div class="grid grid-four">
-        <h4 class="text-blue">CONTACT</h4>
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+    </main>
+
+    <!--                FOOTER               -->
+    <footer>
+      <div class="container">
+        <div class="full">
+          <div class="grid grid-four">
+            <h4 class="text-blue">PRODUCTS</h4>
+            <ul>
+              <li><a href="computers.html">Computers</a></li>
+              <li><a href="phones.html">Phones</a></li>
+              <li><a href="tablets.html">Tablets</a></li>
+              <li><a href="gadgets.html">Gadgets</a></li>
+              <li><a href="accessories.html">Accessories</a></li>
+            </ul>
+          </div>
+
+          <div class="grid grid-four">
+            <h4 class="text-blue">CONTACT</h4>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="grid grid-four"></div>
+          <div class="grid grid-four"></div>
+        </div>
       </div>
-      <div class="grid grid-four"></div>
-      <div class="grid grid-four"></div>
-    </div>
-  </div>
 
-  <div style="text-align: center; padding: 16px;">
-    Copyright &copy; 2022, EveryBit.
-  </div>
- </footer>
+      <div style="text-align: center; padding: 16px;">
+        Copyright &copy; 2022, EveryBit.
+      </div>
+    </footer>
 
-
-<script type="text/javascript">
- (function(d) {
-  var products = document.getElementsByClassName('product');
-  for(var i = products.length - 1;i >= 0 ; --i) {
-   products[i].onclick = function() {
-    var src = this.getElementsByTagName('img')[0].src;
-    document.location.href = 'demo.html#' +  src;
-   }
-  }
- })(document);
-
-</script>
-</body>
-</html>
-
-</body>
+    <!--                SCRIPT               -->
+    <script type="text/javascript">
+      (function(d) {
+        var products = document.getElementsByClassName('product');
+        for(var i = products.length - 1;i >= 0 ; --i) {
+          products[i].onclick = function() {
+            var src = this.getElementsByTagName('img')[0].src;
+            document.location.href = 'demo.html#' +  src;
+          }
+        }
+      })(document);
+    </script>
+  </body>
 </html>
