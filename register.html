@@ -6,27 +6,26 @@
     <title>EveryBit: Register</title>
     <link rel="shortcut icon" href="img/EveryBit logo.png" />
     <meta charset="utf-8" />
-    <link href='https://fonts.googleapis.com/css?family=Advent+Pro:300,700' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Oswald&display=swap' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" type="text/css" href="css/app.css" />
   </head>
 
   <!--                BODY               -->
   <body>
-
+    <link rel="stylesheet" type="text/css" href="css/register.css" />
     <!--                HEADER               -->
-    <header style="background-color: white; box-shadow: 0 1px 4px rgba(0, 0, 0, .1);">
-    
-      <div class="container" style="padding-top: 8px;">
-        <div class="grid grid-one" style="padding-top: 5px;">
+    <header>
+      <div class="hcontainer">
+        <div class="grid-one">
           <nav id="product-nav" class="full">
             <li><a href="index.html">Home</a></li>
             <li><a href="products.html">Products</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li>  
-                <a href="index.html"><img src="img/EveryBit logo.png" alt="logo" style="height: 64px; padding-left: 240px; margin-top: -20px"/>
+                <a href="index.html"><img src="img/EveryBit logo.png" alt="logo" class="mainlogo"/>
             </li>
-            <li><a href="mycart.html" style="padding-left: 300px;">My Cart</a></li>
+            <li><a href="mycart.html" class="mycart">My Cart</a></li>
             <li><a href="login.html">Login</a></li>
             <li><a href="register.html">Register</a></li>
           </nav>
@@ -45,7 +44,7 @@
         <!-- Form starts from here -->
         <form onsubmit='return formValidation()'>
           <label>Full Name:</label>
-          <input id='firstname' type='text'>
+          <input id='fullname' type='text'>
           <p id="p1"></p>
           
           <!-- This segment displays the validation rule for name -->
@@ -59,32 +58,35 @@
           <p id="p3"></p>
           
           <!-- This segment displays the validation rule for email -->
-          <label>State:</label>
-          <select id='state'>
+          <label>Birthdate:</label>
+          <input id='birth' type='date'>
+          <p id="p4"></p>
+
+          <!-- This segment displays the validation rule for date of birth -->
+          <label>Country:</label>
+          <select id='country'>
             <option>Please Choose</option>
             <option>America</option>
-            <option>Nepal</option>
+            <option>Japan</option>
             <option>India</option>
             <option>China</option>
             <option>Spain</option>
             <option>Singapore</option>
             <option>Australia</option>
+            <option>Philippines</option>
+            <option>South Korea</option>
+            <option>Taiwan</option>
             <option>Sweden</option>
-            <option>Africa</option>
+            <option>New Zealand</option>
           </select>
-          <p id="p4"></p>
+          <p id="p5"></p>
 
           <!-- This segment displays the validation rule for selection -->
           <label>Address:</label>
           <input id='addr' type='text'>
-          <p id="p5"></p>
-
-          <!-- This segment displays the validation rule for address -->
-          <label>Zip Code:</label>
-          <input id='zip' type='text'>
           <p id="p6"></p>
 
-          <!-- This segment displays the validation rule for zip -->
+          <!-- This segment displays the validation rule for address -->
           <input id="submit" type='submit' value='Check Form'>
         </form>
       </div>
@@ -92,9 +94,9 @@
 
     <!--                FOOTER               -->
     <footer>
-      <div class="container">
+      <div class="fcontainer">
         <div class="full">
-          <div class="grid grid-four">
+          <div class="grid-four">
             <h4 class="text-blue">PRODUCTS</h4>
             <ul>
               <li><a href="computers.html">Computers</a></li>
@@ -105,7 +107,7 @@
             </ul>
           </div>
 
-          <div class="grid grid-four">
+          <div class="grid-four">
             <h4 class="text-blue">CONTACT</h4>
             <ul>
               <li><a href="about.html">About</a></li>
@@ -113,12 +115,12 @@
             </ul>
           </div>
 
-          <div class="grid grid-four"></div>
-          <div class="grid grid-four"></div>
+          <div class="grid-four"></div>
+          <div class="grid-four"></div>
         </div>
       </div>
 
-      <div style="text-align: center; padding: 16px;">
+      <div class="copyright">
         Copyright &copy; 2022, EveryBit.
       </div>
     </footer>

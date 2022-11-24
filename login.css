@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Oswald&display=swap);
+
+header{
+  background-color: #ffffff; 
+  box-shadow: 0 1px 4px #3d3d3d;
+  font-family: 'Oswald', sans-serif;
+}
+
+img.mainlogo{
+  height: 64px;
+  padding-left: 240px;
+  margin-top: -20px
+}
+
+div.hcontainer{
+  padding-top: 8px;
+  margin: auto;
+  width: 80%;
+}
+
+div.container{
+  padding-top: 8px;
+  background-color: #9f49c7;
+  margin: auto;
+  width: 33%;
+  
+}
+
+div.fcontainer{
+  padding-top: 8px;
+}
+div.grid-four{
+  padding-top: 5px;
+  margin: 0 auto;
+  display: inline-grid;
+  justify-content: center;
+}
+
+div.grid-one{
+  padding-top: 5px;
+}
+
+.mycart{
+  padding-left: 300px;
+}
+
+h2{
+background-color: #ffffff;
+padding: 30px 35px;
+margin: -10px -50px;
+text-align:center;
+border-radius: 10px 10px 0 0;
+}
+hr{
+margin: 10px -50px;
+border: 0;
+border-top: 1px solid #ccc;
+margin-bottom: 40px;
+}
+
+div.main{
+background-color: #ffffff;
+width: 300px;
+padding: 10px 50px 25px;
+border: 2px solid gray;
+border-radius: 10px;
+font-family: 'merriweather', serif;
+float:left;
+margin-top:50px;
+}
+input[type=text],input[type=password]{
+width: 100%;
+height: 40px;
+padding: 5px;
+margin-bottom: 25px;
+margin-top: 5px;
+border: 2px solid #ccc;
+color: #4f4f4f;
+font-size: 16px;
+border-radius: 5px;
+}
+label{
+color: #464646;
+text-shadow: 0 1px 0 #ffffff;
+font-size: 14px;
+font-weight: bold;
+}
+center{
+font-size:32px;
+}
+.note{
+color:red;
+}
+.valid{
+color:green;
+}
+.back{
+text-decoration: none;
+border: 1px solid rgb(0, 143, 255);
+background-color: rgb(0, 214, 255);
+padding: 3px 20px;
+border-radius: 2px;
+color: black;
+}
+input[type=button]{
+font-size: 16px;
+background: linear-gradient(#8aaefc 5%, #7dcdff 100%);
+border: 1px solid #213c75;
+color: #4E4D4B;
+font-weight: bold;
+cursor: pointer;
+width: 100%;
+border-radius: 5px;
+padding: 10px 0;
+outline:none;
+}
+input[type=button]:hover{
+background: linear-gradient(#7dcdff 5%, #8aaefc 100%);
+}
+#form_id {
+  max-width: 500px;
+}
+
+a{
+  text-decoration:none;
+  color: #ffffff;
+  }
+  
+  i{
+  color: #ffffff;
+  }
+  
+
+div.copyright{
+  text-align: center; padding: 16px;
+}
