@@ -69,6 +69,16 @@ html, body {
   border-radius: 4px;
   display: inline-block;
  }
+ .imagetext {
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block;
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  color: #ffffff;
+  font-size: 50px;
+ }
  a {
   text-decoration: none;
   color: inherit;
@@ -102,7 +112,7 @@ html, body {
 .bannerimage {
   position: relative;
   width: 100%;
-  top: 80px;
+  top: 85px;
 }
 /* Make the image responsive */
 .bannerimage img {
@@ -111,8 +121,8 @@ html, body {
 }
 .bannerimage .button {
   position: absolute;
-  top: 60%;
-  left:12%;
+  top: 55%;
+  left: 20%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   background-color: rgb(255, 255, 255);
