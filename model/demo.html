@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+  <!--                HEAD               -->
+  <head>
+    <title>EveryBit: All Products</title>
+    <link rel="shortcut icon" href="img/EveryBit logo.png" />
+    <meta charset="utf-8" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
+  </head>
+
+  <!--                BODY               -->
+  <body>
+
+    <!--                HEADER               -->
+    <header>
+    
+      <div class="container1">
+        <div class="grid grid-one">
+          <a href="./model/index.html">Home</a>
+          <a href="./model/products.html">Products</a>
+          <a href="./model/about.html">About</a>
+          <a href="./model/contact.html">Contact</a>
+        </div>
+
+        <div class="grid grid-one">
+          <a href="./model/index.html"><img width="80" height="80" src="img/EveryBit logo.png" alt="logo"/>
+        </div>
+
+        <div class="grid grid-one">
+          <a href="./model/mycart.html">My Cart</a>
+          <a href="./model/login.html">Login</a>
+          <a href="./model/register.html">Register</a>
+        </div>
+      </div>
+
+    </header>
+
+    <!--                MAIN               -->    
+    <main class="container">     
+      <div class="full">
+        <div class="grid grid-two">
+          <div class="detail">
+            <h1>A Demo Product</h1>
+            <img src="" id="demo-img" style="display: none;" />
+            <p>This is a demo product</p>
+            <span id="price">Rs 456</span>
+            <button class="button green" onclick="alert('Added to cart');">Buy Now</button>
+            <button class="button blue" onclick="alert('Added To Favourite');">Favourite</button>
+          </div>
+        </div>
+
+        <div class="grid grid-two">
+          <div class="box" style="float: right;" id="other">
+            <h3 class="uppr text-blue">Similar products</h3>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--                SCRIPT               -->
+    <script type="text/javascript">
+      /*load product based upon the url*/
+      var uri = window.location.href;
+      var img = 'img/product/shoes/1.jpeg';
+      if (uri.indexOf("#") > 0) {
+        img = uri.substring(uri.indexOf('#') + 1);
+        //dynamically load other similar type of product
+        //get the type like shoes , jeans etc
+        var type = img.substring(img.indexOf('product/') + 8).split('/')[0];
+        //get current image name
+
+        var numb = parseInt(img.substring(img.indexOf('product/') + 8).split('/')[1]);
+        var out = '';
+        for(var i = 1; i <= 5; i++) {
+          if (i == numb) continue;
+          out += '<div class="product"> <h3>Some ' + type + ' ' + i + '</h3> <img src="img/product/' + type + '/' + i + '.jpg" /> </div>';
+        }
+        document.getElementById('other').innerHTML += out;
+      }
+      document.getElementById('price').innerHTML ="Rs: <strong>" + Math.round(Math.random() * 1000) + "</strong>";
+      document.getElementById('demo-img').src = img;
+      document.getElementById('demo-img').style.display = 'block';
+    </script>
+   
+    <!--                FOOTER               -->
+    <footer class="container2">
+      <div class="full2">
+        <div class="grid grid-four">
+          <h4 class="text-blue">Products</h4>
+          <ul class="productfooterlist">
+            <li><a href="./model/computers.html">Computers</a></li>
+            <li><a href="./model/Phone.html">Phone</a></li>
+            <li><a href="./model/Tablets.html">Tablets</a></li>
+            <li><a href="./model/gadgets.html">Gadgets</a></li>
+            <li><a href="./model/accessories.html">Accessories</a></li>
+          </ul>
+        </div>
+
+        <div class="grid grid-four">
+          <h4 class="text-blue">Contact</h4>
+          <ul class="contactfooterlist">
+            <li><a href="./model/about.html">About</a></li>
+            <li><a href="./model/contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="grid grid-four"></div>
+        <div class="grid grid-four"></div>
+        <div class="grid grid-four"></div>
+      </div>
+
+      <div class="full2">
+        Copyright &copy; 2022, EveryBit.
+      </div>
+    </footer>
+  </body>
+</html>
