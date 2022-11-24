@@ -1,66 +1,68 @@
-
-.dark-background      { background: #1976D2; }
-.default-background   { background: #2196F3; }
-.light-background    { background: #BBDEFB; }
-.text-color     { color: #3f3f3f; }
-.accent-color            { background: #03A9F4; }
-.accent-background { background: #03A9F4; }
-.primary-text-color      { color: #3f3f3f; }
-.secondary-text-color    { color: #3f3f3f; }
-.divider-color           { border-color: #B6B6B6; }
-.text-blue {
-  color: #3f3f3f;
-}
-.uppr {
-  text-transform: uppercase;
-}
-h3.uppr {
-  border-bottom: 1px solid #3f3f3f;
-}
+/* body overall */
 html, body {
    margin: 0;
    padding: 0;
    width: 100%;
-   background-color: #f9f9f9;
-   font-family: 'Helvetica', sans-serif;
+   background-color: #ffffff;
+   font-family: 'Oswald', sans-serif;
   }
+  
+  /* whole header portion */
  .container {
   position: relative;
-  max-width: 90%;
+  top: 80px;
+  width: 90%;
   margin: 0 auto;
  }
- main > .container {
-  margin-top: 16px;
-}
- .clear,
- .full::after, .container::after {
-  content: "";
-  display: table;
-  clear: both; 
+ .container1 {
+  position: fixed;
+  width: 100%;
+  margin: 0 auto;
+  z-index:1;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 4px rgba(40,40,40,.15), -2px -2px 4px rgba(40,40,40,.15);
  }
+ .container2 {
+  position:relative;
+  width: 100%;
+  top: 50px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 4px rgba(40,40,40,.15), -2px -2px 4px rgba(40,40,40,.15);
+ }
+ .full{
+  width: 80%;
+  float: right;
+}
+.full2{
+  width: 100%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  background-color: #8aaefc;
+  padding-bottom: 10px;
+}
  .grid {
   box-sizing: border-box;
   float: left;
+  width:100%;
  }
  .grid-one {
-  width: 100%;
+  width: 33%;
+  display: flex;
+  justify-content: center;
  }
  .grid-two {
-  width: 50%;
+  width: 20%;
+  height: 100%;
+  position: fixed;
+  left: 5%;
  }
  .grid-three {
-  width: 33.333%;
- }
+  width: 90%;
+}
  .grid-four {
-  width: 25%;
- }
- .full {
-  width: 100%;
-  box-sizing: border-box;
-  margin: 8px auto;
- }
- .grid:last-child {
-  float: right;
+  width: 20%;
+  padding-left: 5%;
  }
  .button {
   padding: 4px 8px;
@@ -70,7 +72,15 @@ html, body {
  a {
   text-decoration: none;
   color: inherit;
+  padding-left: 5%;
  }
+ ul {
+  list-style-type: none;
+ }
+ #productfooterlist{
+  left: -100px;
+ }
+
  #product-nav {
   list-style: none;
   margin-top: 24px;
@@ -82,15 +92,17 @@ html, body {
   font-size: 16px;
  }
  #product-nav li a {
-  color: #212121;
+  color: #3d3d3d;
  }
  #product-nav li a:hover,
  #product-nav li a:active {
-  color: #919191;
+  color: #ff42a7;
  }
+
 .bannerimage {
   position: relative;
   width: 100%;
+  top: 80px;
 }
 /* Make the image responsive */
 .bannerimage img {
@@ -104,7 +116,7 @@ html, body {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   background-color: rgb(255, 255, 255);
-  color: #3f3f3f;
+  color: #3d3d3d;
   font-size: 16px;
   padding: 12px 24px;
   border: none;
@@ -114,40 +126,27 @@ html, body {
 .bannerimage .button:hover {
   background-color: 919191;
 }
+
  .box {
-  box-sizing: border-box;
-  padding: 8px;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, .1),-1px -1px 4px rgba(0, 0, 0, .1);
-  border-radius: 5px;
+  float: left;
+  padding: 25px;
+  left:1.5%;
  }
  .box h3 {
   margin: 4px;
  }
- .grid > .box {
-  width: 90%;
-  margin: 0 auto;
- }
- .product-line {
-  border-bottom: 2px solid rgba(30, 30, 30, .2);
- }
- .product-line:last-child {
-  border-bottom: 0 none;
- }
  .product {
   position: relative;
-  text-align: center;
-  overflow: hidden;
+  text-align: left;
   cursor: pointer;
   margin-top: 8px !important;
   margin-bottom: 8px !important;
  }
  .product > img {
-  display: block;
   margin: 0 auto;
-  border: 1px solid rgba(30,30,30,.12);
   padding: 8px;
   box-sizing: border-box;
-  height: 150px;
+  height: 300px;
   width: auto;
  }
  .product:hover > img {
@@ -176,7 +175,7 @@ html, body {
   width: 100%;
   max-width: 400px;
   margin: 0 auto;
-  border: 4px solid #fff;
+  border: 4px solid #ffffff;
   border-radius: 4px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
  }
@@ -211,9 +210,6 @@ html, body {
  }
  .blue {
   background-color: #21229a;
- }
- .grid-three > h1 {
-  text-align: center;
  }
  form * {
   display: block;
