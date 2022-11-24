@@ -18,28 +18,7 @@
   <body>
 
     <!--                HEADER               -->
-    <header>
-    
-      <div class="container1">
-        <div class="grid grid-one">
-          <a href="index.html">Home</a>
-          <a href="products.html">Products</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
-        </div>
-
-        <div class="grid grid-one">
-          <a href="index.html"><img width="80" height="80" src="img/EveryBit logo.png" alt="logo"/>
-        </div>
-
-        <div class="grid grid-one">
-          <a href="mycart.html">My Cart</a>
-          <a href="login.html">Login</a>
-          <a href="register.html">Register</a>
-        </div>
-      </div>
-
-    </header>
+    {{>header}}
 
     <div class="bannerimage">
       <img src="img/banners/all products.png" alt="banner">
@@ -52,7 +31,7 @@
           <h2>List of Products</h2>
           <ul class="productfooterlist"> 
             <li><a href="computers.html">Computers</a></li> 
-            <li><a href="{{this.productname}}.html">{{this.productname}}</a></li>
+            <li><a href="accessories.html">Accessories</a></li>
             <li><a href="gadgets.html">Gadgets</a></li>
             <li><a href="Phone.html">Phone</a></li>
             <li><a href="Tablets.html">Tablets</a></li>
@@ -64,77 +43,37 @@
           <h2 class="text-blue">{{this.category}}</h2>
 
           <section class="box product">
-            <img src="img/product/jeans/1.jpg" />
+            <img src="{{this.productimg}}" />
             <h3>{{this.productname}}</h3>
             <p>{{this.productdetail}}</p>
           </section>
 
           <section class="box product">
-            <img src="img/product/jeans/1.jpg" />
+            <img src="{{this.productimg}}" />
             <h3>{{this.productname}}</h3>
             <p>{{this.productdetail}}</p>
           </section>
 
           <section class="box product">
-            <img src="img/product/jeans/1.jpg" />
+            <img src="{{this.productimg}}" />
             <h3>{{this.productname}}</h3>
             <p>{{this.productdetail}}</p>
           </section>
 
           <section class="box product">
-            <img src="img/product/jeans/1.jpg" />
+            <img src="{{this.productimg}}" />
             <h3>{{this.productname}}</h3>
             <p>{{this.productdetail}}</p>
           </section>
 
           <section class="box product">
-            <img src="img/product/jeans/1.jpg" />
+            <img src="{{this.productimg}}" />
             <h3>{{this.productname}}</h3>
             <p>{{this.productdetail}}</p>
           </section>
 
           <section class="box product">
-            <img src="img/product/jeans/1.jpg" />
-            <h3>{{this.productname}}</h3>
-            <p>{{this.productdetail}}</p>
-          </section>
-        </div>
-
-        <div class="grid grid-three">
-          <h2 class="text-blue">{{this.category}}</h2>
-
-          <section class="box product">
-            <img src="img/product/jeans/1.jpg" />
-            <h3>{{this.productname}}</h3>
-            <p>{{this.productdetail}}</p>
-          </section>
-
-          <section class="box product">
-            <img src="img/product/jeans/1.jpg" />
-            <h3>{{this.productname}}</h3>
-            <p>{{this.productdetail}}</p>
-          </section>
-
-          <section class="box product">
-            <img src="img/product/jeans/1.jpg" />
-            <h3>{{this.productname}}</h3>
-            <p>{{this.productdetail}}</p>
-          </section>
-
-          <section class="box product">
-            <img src="img/product/jeans/1.jpg" />
-            <h3>{{this.productname}}</h3>
-            <p>{{this.productdetail}}</p>
-          </section>
-
-          <section class="box product">
-            <img src="img/product/jeans/1.jpg" />
-            <h3>{{this.productname}}</h3>
-            <p>{{this.productdetail}}</p>
-          </section>
-
-          <section class="box product">
-            <img src="img/product/jeans/1.jpg" />
+            <img src="{{this.productimg}}" />
             <h3>{{this.productname}}</h3>
             <p>{{this.productdetail}}</p>
           </section>
@@ -144,37 +83,37 @@
           <h2 class="text-blue">{{this.category}}</h2>
 
           <section class="box product">
-            <img src="img/product/jeans/1.jpg" />
+            <img src="{{this.productimg}}" />
             <h3>{{this.productname}}</h3>
             <p>{{this.productdetail}}</p>
           </section>
 
           <section class="box product">
-            <img src="img/product/jeans/1.jpg" />
+            <img src="{{this.productimg}}" />
             <h3>{{this.productname}}</h3>
             <p>{{this.productdetail}}</p>
           </section>
 
           <section class="box product">
-            <img src="img/product/jeans/1.jpg" />
+            <img src="{{this.productimg}}" />
             <h3>{{this.productname}}</h3>
             <p>{{this.productdetail}}</p>
           </section>
 
           <section class="box product">
-            <img src="img/product/jeans/1.jpg" />
+            <img src="{{this.productimg}}" />
             <h3>{{this.productname}}</h3>
             <p>{{this.productdetail}}</p>
           </section>
 
           <section class="box product">
-            <img src="img/product/jeans/1.jpg" />
+            <img src="{{this.productimg}}" />
             <h3>{{this.productname}}</h3>
             <p>{{this.productdetail}}</p>
           </section>
 
           <section class="box product">
-            <img src="img/product/jeans/1.jpg" />
+            <img src="{{this.productimg}}" />
             <h3>{{this.productname}}</h3>
             <p>{{this.productdetail}}</p>
           </section>
@@ -184,37 +123,77 @@
           <h2 class="text-blue">{{this.category}}</h2>
 
           <section class="box product">
-            <img src="img/product/jeans/1.jpg" />
+            <img src="{{this.productimg}}" />
             <h3>{{this.productname}}</h3>
             <p>{{this.productdetail}}</p>
           </section>
 
           <section class="box product">
-            <img src="img/product/jeans/1.jpg" />
+            <img src="{{this.productimg}}" />
             <h3>{{this.productname}}</h3>
             <p>{{this.productdetail}}</p>
           </section>
 
           <section class="box product">
-            <img src="img/product/jeans/1.jpg" />
+            <img src="{{this.productimg}}" />
             <h3>{{this.productname}}</h3>
             <p>{{this.productdetail}}</p>
           </section>
 
           <section class="box product">
-            <img src="img/product/jeans/1.jpg" />
+            <img src="{{this.productimg}}" />
             <h3>{{this.productname}}</h3>
             <p>{{this.productdetail}}</p>
           </section>
 
           <section class="box product">
-            <img src="img/product/jeans/1.jpg" />
+            <img src="{{this.productimg}}" />
             <h3>{{this.productname}}</h3>
             <p>{{this.productdetail}}</p>
           </section>
 
           <section class="box product">
-            <img src="img/product/jeans/1.jpg" />
+            <img src="{{this.productimg}}" />
+            <h3>{{this.productname}}</h3>
+            <p>{{this.productdetail}}</p>
+          </section>
+        </div>
+
+        <div class="grid grid-three">
+          <h2 class="text-blue">{{this.category}}</h2>
+
+          <section class="box product">
+            <img src="{{this.productimg}}" />
+            <h3>{{this.productname}}</h3>
+            <p>{{this.productdetail}}</p>
+          </section>
+
+          <section class="box product">
+            <img src="{{this.productimg}}" />
+            <h3>{{this.productname}}</h3>
+            <p>{{this.productdetail}}</p>
+          </section>
+
+          <section class="box product">
+            <img src="{{this.productimg}}" />
+            <h3>{{this.productname}}</h3>
+            <p>{{this.productdetail}}</p>
+          </section>
+
+          <section class="box product">
+            <img src="{{this.productimg}}" />
+            <h3>{{this.productname}}</h3>
+            <p>{{this.productdetail}}</p>
+          </section>
+
+          <section class="box product">
+            <img src="{{this.productimg}}" />
+            <h3>{{this.productname}}</h3>
+            <p>{{this.productdetail}}</p>
+          </section>
+
+          <section class="box product">
+            <img src="{{this.productimg}}" />
             <h3>{{this.productname}}</h3>
             <p>{{this.productdetail}}</p>
           </section>
@@ -224,37 +203,37 @@
           <h2 class="text-blue">Tablets</h2>
           
           <section class="box product">
-            <img src="img/product/jeans/1.jpg" />
+            <img src="{{this.productimg}}" />
             <h3>{{this.productname}}</h3>
             <p>{{this.productdetail}}</p>
           </section>
 
           <section class="box product">
-            <img src="img/product/jeans/1.jpg" />
+            <img src="{{this.productimg}}" />
             <h3>{{this.productname}}</h3>
             <p>{{this.productdetail}}</p>
           </section>
 
           <section class="box product">
-            <img src="img/product/jeans/1.jpg" />
+            <img src="{{this.productimg}}" />
             <h3>{{this.productname}}</h3>
             <p>{{this.productdetail}}</p>
           </section>
 
           <section class="box product">
-            <img src="img/product/jeans/1.jpg" />
+            <img src="{{this.productimg}}" />
             <h3>{{this.productname}}</h3>
             <p>{{this.productdetail}}</p>
           </section>
 
           <section class="box product">
-            <img src="img/product/jeans/1.jpg" />
+            <img src="{{this.productimg}}" />
             <h3>{{this.productname}}</h3>
             <p>{{this.productdetail}}</p>
           </section>
 
           <section class="box product">
-            <img src="img/product/jeans/1.jpg" />
+            <img src="{{this.productimg}}" />
             <h3>{{this.productname}}</h3>
             <p>{{this.productdetail}}</p>
           </section>
@@ -264,36 +243,7 @@
     </main>
    
     <!--                FOOTER               -->
-    <footer class="container2">
-      <div class="full2">
-        <div class="grid grid-four">
-          <h4 class="text-blue">Products</h4>
-          <ul class="productfooterlist">
-            <li><a href="computers.html">Computers</a></li>
-            <li><a href="Phone.html">Phone</a></li>
-            <li><a href="Tablets.html">Tablets</a></li>
-            <li><a href="gadgets.html">Gadgets</a></li>
-            <li><a href="{{this.productname}}.html">{{this.productname}}</a></li>
-          </ul>
-        </div>
-
-        <div class="grid grid-four">
-          <h4 class="text-blue">Contact</h4>
-          <ul class="contactfooterlist">
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-
-        <div class="grid grid-four"></div>
-        <div class="grid grid-four"></div>
-        <div class="grid grid-four"></div>
-      </div>
-
-      <div class="full2">
-        Copyright &copy; 2022, EveryBit.
-      </div>
-    </footer>
+    {{>footer}}
 
     <!--                SCRIPT               -->
     <script type="text/javascript">
