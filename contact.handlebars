@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+  <!--                HEAD               -->
+  <head>
+    <title>EveryBit: All Products</title>
+    <link rel="shortcut icon" href="img/EveryBit logo.png" />
+    <meta charset="utf-8" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
+  </head>
+
+  <!--                BODY               -->
+  <body>
+
+    <!--                HEADER               -->
+    {{>header}}
+
+
+    <!--                MAIN               -->
+    <main class="container">
+      <div id="main">
+        <h1>Contact </h1>
+        <div id="form_sample"></div>
+        <script src="js/form.js"></script>
+      </div>
+    </main>
+  
+    <!--                FOOTER               -->
+    {{header}}
+
+    <!--                SCRIPT               -->
+    <script type="text/javascript">
+        (function(d) {
+          var products = document.getElementsByClassName('product');
+          for(var i = products.length - 1;i >= 0 ; --i) {
+            products[i].onclick = function() {
+              var src = this.getElementsByTagName('img')[0].src;
+              document.location.href = 'demo.html#' +  src;
+            }
+          }
+        })(document);
+    </script>
+  </body>
+</html>

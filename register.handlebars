@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+  <!--                HEAD               -->
+  <head>
+    <title>EveryBit: Register</title>
+    <link rel="shortcut icon" href="img/EveryBit logo.png" />
+    <meta charset="utf-8" />
+    <link href='https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Oswald&display=swap' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
+  </head>
+
+  <!--                BODY               -->
+  <body>
+    <link rel="stylesheet" type="text/css" href="css/register.css" />
+    <!--                HEADER               -->
+    {{>header}}
+
+    <!--                MAIN               -->    
+    <main class="container">
+      <div id="form_layout">
+        <p id="head"></p>
+
+        <!-- This segment displays the validation rule -->
+        <h2> Register</h2>
+
+        <!-- Form starts from here -->
+        <form onsubmit='return formValidation()'>
+          <label>Full Name:</label>
+          <input id='fullname' type='text'>
+          <p id="p1"></p>
+          
+          <!-- This segment displays the validation rule for name -->
+          <label>Username(6-8 characters):</label>
+          <input id='username' type='text'>
+          <p id="p2"></p>
+
+          <!-- This segment displays the validation rule for user name -->
+          <label>Email:</label>
+          <input id='email' type='text'>
+          <p id="p3"></p>
+          
+          <!-- This segment displays the validation rule for email -->
+          <label>Birthdate:</label>
+          <input id='birth' type='date'>
+          <p id="p4"></p>
+
+          <!-- This segment displays the validation rule for date of birth -->
+          <label>Country:</label>
+          <select id='country'>
+            <option>Please Choose</option>
+            <option>America</option>
+            <option>Japan</option>
+            <option>India</option>
+            <option>China</option>
+            <option>Spain</option>
+            <option>Singapore</option>
+            <option>Australia</option>
+            <option>Philippines</option>
+            <option>South Korea</option>
+            <option>Taiwan</option>
+            <option>Sweden</option>
+            <option>New Zealand</option>
+          </select>
+          <p id="p5"></p>
+
+          <!-- This segment displays the validation rule for selection -->
+          <label>Address:</label>
+          <input id='addr' type='text'>
+          <p id="p6"></p>
+
+          <!-- This segment displays the validation rule for address -->
+          <input id="submit" type='submit' value='Check Form'>
+        </form>
+      </div>
+    </main>
+
+    <!--                FOOTER               -->
+    {{>footer}}
+
+    <!--                SCRIPT               -->
+    <script type="text/javascript">
+      (function(d) {
+        var products = document.getElementsByClassName('product');
+        for(var i = products.length - 1;i >= 0 ; --i) {
+          products[i].onclick = function() {
+            var src = this.getElementsByTagName('img')[0].src;
+            document.location.href = 'demo.html#' +  src;
+          }
+        }
+      })(document);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+  <!--                HEADER               -->
+  <head>
+    <title>EveryBit: My Cart</title>
+    <link rel="shortcut icon" href="img/EveryBit logo.png" />
+    <meta charset="utf-8" />
+    <link href='https://fonts.googleapis.com/css?family=Advent+Pro:300,700' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
+  </head>
+
+  <!--                BODY               -->
+  <body>
+
+    <!--                HEADER               -->
+    {{>header}}
+
+    <!--                MAIN               -->
+    <main class="container">
+    </main>
+
+  	<div class="container">
+  		<section>
+  			<form id="payment" action="menus.html">
+  					
+          <div class="details">
+  					<p id="p1">PAYMENT DETAILS</p>
+  				</div>
+
+  				<label for=name >Name</label>
+  				<input id="name" name="name" type="text" required autofocus />
+
+          <label for=email>Email</label>
+  				<input id="email" name="email" type="email" required /></br>
+
+  			  <label for=phone>Phone</label>
+  				<input id="phone" name="phone" type="tel" required />
+
+  				<label for=address>Address</label>
+  			  <input id="address" name="address" required>
+
+  			  <label for=postcode>House Number</label>
+  				<input id="postcode" name=postcode type="text" required /></br>
+
+  				<legend id="card">Card Number</legend>
+  				<label for=Enumber>Card Number</label>
+  				<input id=cardnumber name=cardnumber type=number required />
+
+  				<label for=namecard>Pin of Card</label>
+  				<input type="password" name="password">
+
+  				<button type=submit>Order Now</button>
+  			</form>
+  		</section>
+  	</div>
+
+    <!--                FOOTER               -->
+    {{>footers}}
+
+    <!--                SCRIPT               -->
+    <script type="text/javascript">
+      (function(d) {
+        var products = document.getElementsByClassName('product');
+        for(var i = products.length - 1;i >= 0 ; --i) {
+          products[i].onclick = function() {
+            var src = this.getElementsByTagName('img')[0].src;
+            document.location.href = 'demo.html#' +  src;
+          }
+        }
+      })(document);
+    </script>
+ </body>
+ </html>
