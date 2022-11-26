@@ -1,0 +1,15 @@
+.imgFilter{
+    filter: brightness(0.80);
+}
+
+.logo{
+    height: 4rem
+}
+
+.card-img-top {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    height: 15vw;
+    object-fit: cover;
+}
