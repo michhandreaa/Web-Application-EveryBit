@@ -9,7 +9,7 @@
 ## visit localhost port 3000
 ```(localhost:3000)```
 
-## crediting of some references used 
+## crediting of references used 
 ```-https://drive.google.com/drive/u/1/folders/1Lom4xK7FyHP87nX6DsDm4Q-k8voXUOwC```
 
 ```-https://www.youtube.com/playlist?list=PL55RiY5tL51rajp7Xr_zk-fCFtzdlGKUp ```
