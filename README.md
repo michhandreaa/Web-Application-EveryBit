@@ -19,3 +19,9 @@
 ```-https://www.youtube.com/watch?v=4CXtw1CIauQ ```
 
 ```-https://github.com/larrygao001/STONIE ```
+
+```-https://sweetalert2.github.io/ ```
+
+```-https://getbootstrap.com/ ```
+
+```-https://jquery.com/```
