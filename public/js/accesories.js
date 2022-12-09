@@ -30,7 +30,6 @@ function HTMLsaladProduct(con) {
                     <p class="card-text">Price: ${SALAD[con - 1].price}.00</p>
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                            <button type="button" onclick="cart2('${SALAD[con - 1].name}','${SALAD[con - 1].price}','${URL}','${con}','${btn}')" class="btn btn-sm btn-outline-secondary" ><a href="/cart" style="color:inherit;">Buy</a></button>
                             <button id="${btn}" type="button" onclick="cart('${SALAD[con - 1].name}','${SALAD[con - 1].price}','${URL}','${con}','${btn}')" class="btn btn-sm btn-outline-secondary" >Add to cart</button>
                         </div>
                         <small class="text-muted">Free shipping </small>

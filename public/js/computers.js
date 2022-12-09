@@ -34,7 +34,6 @@ function HTMLfruitProduct(con) {
                     <p class="card-text">Price: ${FRUIT[con - 1].price}.00</p>
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                            <button type="button" onclick="cart2('${FRUIT[con - 1].name}','${FRUIT[con - 1].price}','${URL}','${con}','${btn}')" class="btn btn-sm btn-outline-secondary" ><a style="color:inherit;" href="/cart">Buy</a></button>
                             <button id="${btn}" type="button" onclick="cart('${FRUIT[con - 1].name}','${FRUIT[con - 1].price}','${URL}','${con}','${btn}')" class="btn btn-sm btn-outline-secondary" >Add to cart</button>
                         </div>
                         <small class="text-muted">Free shipping </small>

@@ -1,44 +1,60 @@
+var Product = Require('../models/product')
 
-var Product = Require
 const express = require('express');
 const mongoose = require('mongoose');
 const Product = mongoose.model('Product');
 
-var product = [
+mongoose.connect('mongodb+srv://admin:123@cluster0.afllrto.mongodb.net/EveryBitDB?retryWrites=true&w=majority', { useNewUrlParser: true }, (err) => {
+
+var products = [
     new product({
         imageLink: '/public/img/computers/computer1',
-        title: 'computer 1',
+        title: 'Legion Gaming PC',
         description: 'lorem ipsum dolor sit amet',
-        price: '$1',
+        price: '20000.00',
     }),
     new product({
         imageLink: '/public/img/computers/computer2',
-        title: 'computer 1',
+        title: 'iBUYPOWER BB985V2',
         description: 'lorem ipsum dolor sit amet',
-        price: '$2',
+        price: '15000.00',
     }),
     new product({
         imageLink: '/public/img/computers/computer3',
-        title: 'computer 1',
+        title: 'iBUYPOWER Element Mini',
         description: 'lorem ipsum dolor sit amet',
-        price: '$3',
+        price: '18000.00',
     }),
     new product({
         imageLink: '/public/img/computers/computer4',
-        title: 'computer 1',
+        title: 'SkyTech Archangel 3.0',
         description: 'lorem ipsum dolor sit amet',
-        price: '$4',
+        price: '23000.00',
     }),
     new product({
         imageLink: '/public/img/computers/computer5',
-        title: 'computer 1',
+        title: 'ABS Master ALI432',
         description: 'lorem ipsum dolor sit amet',
-        price: '$5',
+        price: '16000.00',
     }),
     new product({
         imageLink: '/public/img/computers/computer6',
-        title: 'computer 1',
+        title: 'Aegis se 10si',
         description: 'lorem ipsum dolor sit amet',
-        price: '$6',
+        price: '13000',
     })
 ];
+
+var done = 0;
+for (var i = 0; i < products.length; i++) {
+    products[i].save(function (err, result) {
+        done++;
+        if (done === products.length) {
+            exit();
+        }
+    });
+}
+
+function exit() {
+    mongoose.disconnect();
+}
