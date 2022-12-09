@@ -2,11 +2,14 @@
   "ExpandedNodes": [
     "",
     "\\controllers",
+    "\\models",
     "\\public",
     "\\public\\js",
     "\\seeder",
-    "\\views"
+    "\\views",
+    "\\views\\partials",
+    "\\views\\products"
   ],
-  "SelectedNode": "\\controllers\\genController.js",
+  "SelectedNode": "\\views\\phones.hbs",
   "PreviewInSolutionExplorer": false
 }

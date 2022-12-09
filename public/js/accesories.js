@@ -21,18 +21,12 @@ function HTMLaddonProduct(con) {
             <div class="card mb-4 shadow-sm">
                 <img class="card-img-top" style="height:16rem;" src="${URL}" alt="Card image cap">
                 <div class="card-body">
-                    <i style="color:orange;" class="fa fa-star"  ></i>
-                    <i style="color:orange;" class="fa fa-star"  ></i>
-                    <i style="color:orange;" class="fa fa-star"  ></i>
-                    <i style="color:orange;" class="fa fa-star"  ></i>
-                    <i style="color:orange;" class="fa fa-star"  ></i>
                     <p class="card-text">${ADDON[con - 1].name}</p>
                     <p class="card-text">Price: ${ADDON[con - 1].price}.00</p>
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
                             <button id="${btn}" type="button" onclick="cart('${ADDON[con - 1].name}','${ADDON[con - 1].price}','${URL}','${con}','${btn}')" class="btn btn-sm btn-outline-secondary" >Add to cart</button>
                         </div>
-                        <small class="text-muted">Free shipping </small>
                     </div>
                 </div>
             </div>

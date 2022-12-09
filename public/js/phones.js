@@ -2,6 +2,8 @@
 var products = [];
 var cartItems = [];
 var cart_n = document.getElementById('cart_n');
+
+
 // DIVS
 var phoneDIV = document.getElementById("phoneDIV");
 
@@ -9,29 +11,24 @@ var phoneDIV = document.getElementById("phoneDIV");
 var PHONE = [
     { name: 'iPhone 14', price: 10500 },
     { name: 'Huawei 8i', price: 11000 },
-    { name: 'Samsung J8', price: 12000 }];
+    { name: 'Samsung J8', price: 12000 }
+];
 
 //HTML
 function HTMLphoneProduct(con) {
-    let URL = `img/phones/phone${con}.jpeg`;
-    let btn = `btnPhone${con}`; C
+    let URL = `../img/phones/phone${con}.jpeg`;
+    let btn = `btnPHONE${con}`;
     return `
         <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-                <img class="card-img-top" style="height:16rem;" src="${URL}" alt="Card image cap">
+                <img class="card-img-top" background-size="cover;" style="height:16rem;" src="${URL}" alt="Card image cap">
                 <div class="card-body">
-                    <i style="color:orange;" class="fa fa-star"  ></i>
-                    <i style="color:orange;" class="fa fa-star"  ></i>
-                    <i style="color:orange;" class="fa fa-star"  ></i>
-                    <i style="color:orange;" class="fa fa-star"  ></i>
-                    <i style="color:orange;" class="fa fa-star"  ></i>
                     <p class="card-text">${PHONE[con - 1].name}</p>
                     <p class="card-text">Price: ${PHONE[con - 1].price}.00</p>
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
                             <button id="${btn}" type="button" onclick="cart('${PHONE[con - 1].name}','${PHONE[con - 1].price}','${URL}','${con}','${btn}')" class="btn btn-sm btn-outline-secondary" >Add to cart</button>
                         </div>
-                        <small class="text-muted">Free shipping </small>
                     </div>
                 </div>
             </div>
@@ -97,12 +94,10 @@ function cart2(name, price, url, con, btncart) {
     document.getElementById(btncart).style.display = "none";
 }
 
-
 (() => {
     for (let index = 1; index <= 6; index++) {
         phoneDIV.innerHTML += `${HTMLphoneProduct(index)}`;
     }
-
     if (localStorage.getItem("cart") == null) {
 
     } else {
