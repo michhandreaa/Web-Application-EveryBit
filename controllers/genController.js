@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const Order = mongoose.model('Order');
 const Product = require('../models/product')
 
-var router= express.Router();
+const router= express.Router();
 mongoose.set('useFindAndModify', false);
 
 // Router FOR GETTING PAGES
@@ -36,12 +36,13 @@ router.get('/cart',(req,res)=>{
     res.render('cart');
 });
 
-router.get('/orders',(req,res)=>{
-    res.render('orders');
+router.get('/order',(req,res)=>{
+    res.render('order');
 });
 
 router.get('/admin',(req,res)=>{
     Order.find((err,docs)=>{
+        console.log(err)
         if (!err) {
             res.render("admin",{
                 order:docs
