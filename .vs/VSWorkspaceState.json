@@ -1,11 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\controllers",
     "\\public",
-    "\\public\\img",
-    "\\views",
-    "\\views\\partials"
+    "\\public\\js",
+    "\\seeder",
+    "\\views"
   ],
-  "SelectedNode": "\\views\\partials\\header.hbs",
+  "SelectedNode": "\\controllers\\genController.js",
   "PreviewInSolutionExplorer": false
 }

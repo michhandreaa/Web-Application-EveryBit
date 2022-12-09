@@ -5,4 +5,4 @@ var orderSchema = new mongoose.Schema({
     total:{type:String}
 });
 
-mongoose.model('Order',orderSchema);
+module.exports = mongoose.model('Order',orderSchema);
