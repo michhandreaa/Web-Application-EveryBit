@@ -4,10 +4,10 @@ var cartItems = [];
 var cart_n = document.getElementById('cart_n');
 
 // DIVS
-var fruitDIV = document.getElementById("fruitDIV");
+var pcDIV = document.getElementById("pcDIV");
 
 //INFORMATION
-var FRUIT = [
+var PC = [
     { name: 'Legion Gaming PC', price: 20000 },
     { name: 'iBUYPOWER BB985V2', price: 15000 },
     { name: 'iBUYPOWE Element Mini', price: 18000 },
@@ -17,9 +17,9 @@ var FRUIT = [
 ];
 
 //HTML
-function HTMLfruitProduct(con) {
+function HTMLpcProduct(con) {
     let URL = `../img/computers/computer${con}.jpeg`;
-    let btn = `btnFruit${con}`;
+    let btn = `btnPC${con}`;
     return `
         <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
@@ -30,11 +30,11 @@ function HTMLfruitProduct(con) {
                     <i style="color:orange;" class="fa fa-star"  ></i>
                     <i style="color:orange;" class="fa fa-star"  ></i>
                     <i style="color:orange;" class="fa fa-star"  ></i>
-                    <p class="card-text">${FRUIT[con - 1].name}</p>
-                    <p class="card-text">Price: ${FRUIT[con - 1].price}.00</p>
+                    <p class="card-text">${PC[con - 1].name}</p>
+                    <p class="card-text">Price: ${PC[con - 1].price}.00</p>
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                            <button id="${btn}" type="button" onclick="cart('${FRUIT[con - 1].name}','${FRUIT[con - 1].price}','${URL}','${con}','${btn}')" class="btn btn-sm btn-outline-secondary" >Add to cart</button>
+                            <button id="${btn}" type="button" onclick="cart('${PC[con - 1].name}','${PC[con - 1].price}','${URL}','${con}','${btn}')" class="btn btn-sm btn-outline-secondary" >Add to cart</button>
                         </div>
                         <small class="text-muted">Free shipping </small>
                     </div>
@@ -105,7 +105,7 @@ function cart2(name, price, url, con, btncart) {
 
 (() => {
     for (let index = 1; index <= 6; index++) {
-        fruitDIV.innerHTML += `${HTMLfruitProduct(index)}`;
+        pcDIV.innerHTML += `${HTMLpcProduct(index)}`;
     }
     if (localStorage.getItem("cart") == null) {
 
