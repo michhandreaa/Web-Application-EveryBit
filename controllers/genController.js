@@ -2,10 +2,8 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const Order = mongoose.model('Order');
+const Product = mongoose.model('Product');
 
-
-// models
-var Product = require('../models/product')
 
 const router= express.Router();
 mongoose.set('useFindAndModify', false);
